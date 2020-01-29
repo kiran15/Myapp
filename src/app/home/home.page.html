@@ -1,0 +1,61 @@
+
+
+<ion-content class="content">
+    <div class="toolbar-test"></div>
+    <div class="result-test">RESULT OF THE TEST</div>
+  <div class="main-div">
+    <div class="circle-parent">
+        <div class="circle">
+        <div class="calendar"></div>
+        <div class="never">Never</div>
+      </div>
+      <div class="circle">
+        <div class="calendarcross"></div>
+        <div class="never">Occasionally</div>
+      </div>
+      <div class="circle">
+        <div class="hours"></div>
+        <div class="never">4 hours</div>
+      </div>
+      <div class="circle">
+        <div class="comment"></div>
+        <div class="never">Yearly</div>
+      </div>
+      <div class="circle">
+        <div class="calendar"></div>
+        <div class="never">Never</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-parent-element">
+  <!-- <div class="slidecontainer">
+      <input type="range" min="minvalue" max="3" value="minvalue" class="slider" id="myRange">
+  </div> -->
+</div>
+  <div class="slidecontainer-details">
+  <div class="first-details"  (click)="firstdetails()" [ngClass]="{'bluerd': minvalue !== 1}">
+      <div class="thumb" *ngIf="minvalue === 1" ></div>
+  </div>
+    <div class="second-details"  (click)="seconddetails()" [ngClass]="{'bluerd': minvalue !== 2}">
+    <div class="thumb" *ngIf="minvalue === 2"></div>
+  </div>
+  <div class="third-details"  (click)="thirddetails()" [ngClass]="{'bluerd': minvalue !== 3}">
+    <div class="thumb" *ngIf="minvalue === 3" ></div>
+  </div>
+</div>
+<div class="slidecontainer-details-text">
+    <div class="less"  >
+        LESS RELEVANT
+    </div>
+      <div class="relevant" >
+          RELEVANT
+    </div>
+    <div class="veryrelevant" >
+        VERY RELEVANT
+    </div>
+  </div>
+<div class="button-details">
+  <ion-button class="tryAgain" expand="round" style="border-color: white !important;" fill="outline"(click)="tryagain()">TRY AGAIN <i class="arrow"></i></ion-button>
+</div>
+</ion-content>
+
